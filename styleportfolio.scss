@@ -1,0 +1,275 @@
+
+
+header {
+    height: 900px;
+	color: #fff;
+	background: linear-gradient(-45deg, #0b1c29, #063844, #16a5c9, #04525c);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+
+
+        @-webkit-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @-moz-keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+        @keyframes Gradient {
+            0% {
+                background-position: 0% 50%
+            }
+            50% {
+                background-position: 100% 50%
+            }
+            100% {
+                background-position: 0% 50%
+            }
+        }
+
+            
+    }
+.Introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 17%;
+}
+
+        .Introduction__titre {
+            font-size: 2.5vw;
+            text-align: center;
+        }
+
+        .Introduction__name {
+            color:#ffffff;
+        }
+
+
+.nav-wrapper {
+    border-bottom: 3px solid #16a5c9;
+}
+
+    .About__central {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+    }
+
+            .About__title {
+                text-align: center;
+            }
+
+            .About__resume {
+               display: flex;
+                width: 50%;
+                flex-direction: column;
+                padding-left: 5%;
+                align-content: center;
+            }
+
+                        .row {
+                            flex-direction: column;
+                        }
+
+                        .waves-effect {
+                            width: 65%;
+                        }
+
+                        .modal { width: 50% !important ; height: 100% !important ; }
+                        .cv {
+                            width: 100%;
+                        }
+
+            .About__skills {
+                width: 45%;
+            }
+
+                .Skills__coding {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                    .Skills__coding__logo {
+                        width: 30%;
+                        height: auto;
+                    }
+                    
+                    .Skills__prog {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                            .Skills__prog__chip {
+                                width: 50%;
+                            }
+
+                            .Skills__prog__container {
+                                width: 50%;
+                            }
+                            
+                                    .skillssass {width: 45%; background-color: rgb(207, 100, 154);}
+                                    .skillsmaterialize {width: 80%; background-color: rgb(235, 112, 119);}
+                                    .skillscss {width: 75%; background-color: rgb(55, 154, 214);}
+                                    .skillshtml {width: 90%; background-color: rgb(221, 74, 37);}
+                                    .skillsjavascript {width: 20%; background-color: rgb(233, 212, 78);}
+
+                            .skills {
+                                text-align: right;
+                                padding: 2%;
+                                color: white;
+                            }
+
+                .material-icons {
+                    padding-top: 3%;
+                }
+
+                    .languageflags {
+                        display: flex;
+                        
+                    }
+
+                        .flag {
+                            width: 30%;
+                            height: 30%;
+                        }
+
+                        .uk {
+                            padding-left: 2%;
+                        }
+
+                        .fr {
+                            padding-right: 2%
+                        }
+
+.Portfolio {
+ background-color: #04525c;
+}
+
+    .Portfolio__title {
+        text-align: center;
+        padding-top: 3%;
+    }
+
+.Contact {
+    background-color: rgb(36, 41, 52);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    .Contact__title {
+        text-align: center;
+        color: white;
+        padding-top: 3%; 
+        padding-bottom: 3%;
+    }
+ 
+    
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+                color: white;
+            }
+            
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            
+            input[type=submit] {
+                background-color: rgb(253, 253, 253);
+                color: rgb(30, 36, 44);
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #ffffff;
+            }
+            
+            .container {
+                border-radius: 5px;
+                background-color: rgb(30, 36, 44);
+                padding: 20px;
+                box-sizing: border-box;
+                margin-bottom: 3%;
+              
+                
+            }
+            
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+
+    .backtothetop {
+        padding-top: 5%;
+    }
+
+        .nav-extended {
+            padding-top: 3%;
+            background-color: rgb(36, 41, 52);
+        }
+
+            
+
+
+            
+
+                
+    
+    
+    
+
