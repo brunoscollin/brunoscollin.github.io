@@ -278,4 +278,19 @@ input[type=submit]:hover {
   margin-bottom: 5%;
 }
 
+@media screen and (max-width: 400px) {
+  .About__central {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .About__resume {
+    width: 100%;
+  }
+
+  .About__skills {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=styleportfoliogenerate.css.map */

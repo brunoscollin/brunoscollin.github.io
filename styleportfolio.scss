@@ -223,8 +223,6 @@ header {
                 padding: 20px;
                 box-sizing: border-box;
                 margin-bottom: 3%;
-              
-                
             }
             
             .col-25 {
@@ -268,7 +266,24 @@ header {
         margin-bottom: 5%;
     } 
     
-        
+    @media screen and (max-width: 400px)
+{
+    .About__central {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .About__resume {
+        width: 100%;
+    }
+
+    .About__skills {
+        width: 100%;
+    }
+    
+    }
+    
+    
 
             
 
