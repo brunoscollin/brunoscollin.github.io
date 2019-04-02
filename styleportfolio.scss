@@ -117,11 +117,20 @@ header {
                     .Skills__coding__logo {
                         width: 30%;
                         height: auto;
+                        margin-left: 35%;
                     }
                     
                     .Skills__prog {
                         display: flex;
                         flex-direction: row;
+                        margin-top: 5%;
+                        margin-left: 20%;
+                        
+                    }
+
+                    .Skills__prog__logo {
+                        width: 80%;
+                        height: 80%;
                     }
 
                             .Skills__prog__chip {

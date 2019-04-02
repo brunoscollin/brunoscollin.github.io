@@ -26,7 +26,7 @@
     <header>
 
         <div class="Introduction" id="toptop">
-          <h1 class="Introduction__titre">Hello, I'm <span class="Introduction__name">Bruno</span>, I'm a front end developper student with a 15 years experience in fashion PR</h1>
+          <h1 class="Introduction__titre">Hello, I'm <span class="Introduction__name">Bruno Collin </span>, I'm a front end developper with a 15 years experience in fashion PR</h1>
           <a href="#menu" id="top" class="btn-floating btn-large red darken-4"><i class="material-icons">menu</i></a>
         </div>
 
@@ -80,7 +80,7 @@
                       <ul class="collapsible">
                           <li>
                             <div class="collapsible-header">Le diable s'habille en Gucci ▽</div>
-                            <div class="collapsible-body"><span>Pendant plus de 15 ans, j'ai été attaché de presse pour des marques de prêt-à porter et de sportswear. Chargé de l'image de marque de mes clients, j'ai travaillé avec les journalistes et les stylistes de la presse mode française. Le diable, ce n'est pas moi bien que je sois l'heureux propriétaire d'une paire de mocassins Gucci, mais c'est celui qui était en total look m'a donné envie de me reconvertir.</span></div>
+                            <div class="collapsible-body"><span>Pendant plus de 15 ans, j'ai été attaché de presse pour des marques de prêt-à porter et de sportswear. Chargé de l'image de marque de mes clients, j'ai travaillé avec les journalistes et les stylistes de la presse mode française. Le diable, ce n'est pas moi bien que je sois l'heureux propriétaire d'une paire de mocassins Gucci, mais celui qui était en total look m'a donné envie de me reconvertir.</span></div>
                           </li>
                         </ul>
 
@@ -121,7 +121,7 @@
                       <ul class="collapsible">
                         <li>
                           <div class="collapsible-header">The Reinvention Tour ▽</div>
-                          <div class="collapsible-body"><span>The Queen of Pop est mon idôle. A 40 ans, je me suis dit qu'il était temps d'aussi me réinventer et de commencer une nouvelle ère. Mes 15 années dans la mode m'ont beaucoup apporté, mais j'ai eu envie de changer. Je souhaitais trouver un métier qui m'apporte plus de souplesse quant au secteur dans lequel je pourrais travailler ou la ville voire le pays où je pourrais vivre. Avec mes clients, j'ai eu l'occasion de travailler avec des développeurs et des web designers.</span></div>
+                          <div class="collapsible-body"><span>The Queen of Pop est mon idôle. A 40 ans, je me suis dit qu'il était temps d'aussi me réinventer et de commencer une nouvelle ère. Mes 15 années dans la mode m'ont beaucoup apporté, mais j'ai eu envie de changer. Je souhaitais trouver un métier qui m'apporte plus de souplesse quant au secteur dans lequel je pourrais travailler ou la ville voire le pays.</span></div>
                         </li>
                         <li>
                           <div class="collapsible-header">Feeling Good ▽</div>
@@ -135,7 +135,54 @@
                         <img class="Skills__coding__logo" src="logo_coding_academy.png" alt="logo Coding Academy">
                       
                             <div class="Skills__prog">
-                                  <img class="Skills__prog__logo" src="logomontage.png" alt="logos skills">
+                              <div class="chip Skills__prog__chip">
+                                  <img src="sass.png" alt="sass logo">
+                                  Sass
+                              </div>
+                              <div class="Skills__prog__container">
+                                  <div class="skills skillssass">45%</div>
+                                </div>
+                            </div>
+                                  
+
+                            <div class="Skills__prog">
+                              <div class="chip Skills__prog__chip">
+                                  <img src="materialize.png" alt="Contact Person">
+                                  Materialize
+                                </div>
+                                <div class="Skills__prog__container">
+                                    <div class="skills skillsmaterialize">80%</div>
+                                  </div>
+                            </div>
+
+                            <div class="Skills__prog">
+                              <div class="chip Skills__prog__chip">
+                                  <img src="css.png" alt="Contact Person">
+                                  CSS
+                                </div>
+                                <div class="Skills__prog__container">
+                                    <div class="skills skillscss">75%</div>
+                                  </div>
+                            </div>
+
+                            <div class="Skills__prog">  
+                              <div class="chip Skills__prog__chip">
+                                  <img src="html.png" alt="Contact Person">
+                                  html
+                                </div>
+                                <div class="Skills__prog__container">
+                                    <div class="skills skillshtml">90%</div>
+                                  </div>
+                            </div>
+
+                            <div class="Skills__prog">
+                              <div class="chip Skills__prog__chip">
+                                  <img src="javascript.png" alt="Contact Person">
+                                  Java Script
+                                </div>
+                                <div class="Skills__prog__container">
+                                    <div class="skills skillsjavascript">50%</div>
+                                  </div>
                             </div>
                     </div>
 
