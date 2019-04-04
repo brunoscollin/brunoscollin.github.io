@@ -2,8 +2,33 @@ body {
     width: 100%;
 }
 
-header {
-    height: 900px;
+
+.Introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 17%;
+}
+
+        .Introduction__titre {
+            font-size: 2.5vw;
+            text-align: center;
+        }
+
+        .Introduction__name {
+            color:#ffffff;
+        }
+
+
+.nav-wrapper {
+    border-bottom: 3px solid #16a5c9;
+}
+
+.About {
+    padding-bottom: 5%;
 	color: #fff;
 	background: linear-gradient(-45deg, #0b1c29, #063844, #16a5c9, #04525c);
 	background-size: 400% 400%;
@@ -47,41 +72,22 @@ header {
                 background-position: 0% 50%
             }
         }
-
-            
-    }
-.Introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 17%;
-}
-
-        .Introduction__titre {
-            font-size: 2.5vw;
-            text-align: center;
-        }
-
-        .Introduction__name {
-            color:#ffffff;
-        }
-
-
-.nav-wrapper {
-    border-bottom: 3px solid #16a5c9;
 }
 
     .About__central {
         display: flex;
         flex-direction: row;
-        padding-top: 5%;
+        padding-top: 2%;
     }
 
             .About__title {
                 text-align: center;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .card-content {
+                color: black;
             }
 
             .About__resume {
@@ -90,6 +96,10 @@ header {
                 flex-direction: column;
                 padding-left: 5%;
                 align-content: center;
+            }
+
+            .collapsible-header {
+                color: black;
             }
 
                         .row {
@@ -118,6 +128,7 @@ header {
                         width: 30%;
                         height: auto;
                         margin-left: 35%;
+                        margin-top: 7%;
                     }
                     
                     .Skills__prog {
@@ -177,11 +188,14 @@ header {
 
 .Portfolio {
  background-color: #04525c;
+ display: grid;
+
 }
 
     .Portfolio__title {
         text-align: center;
         padding-top: 3%;
+        color: white;
     }
 
 .Contact {
