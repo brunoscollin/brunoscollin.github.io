@@ -1,0 +1,427 @@
+body {
+    background-color: lightgrey;
+}
+
+    .projet {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 0px;
+    }
+
+            .navbar {
+                
+                margin: 0;
+                padding: 20px;
+                overflow: hidden;
+                background-color: lightgrey;
+                font: 13px Helvetica, sans-serif;
+                
+            }
+            #rond {
+                float: left;
+            }
+
+            .navbar ul {
+                list-style-type: none;
+                margin: 0px;
+            }
+
+                    .navbar li {
+                        float: right;
+                    }
+
+                    .navbar li a {
+                        display: block;
+                        color: rgb(0, 0, 0);
+                        padding: 10px;
+                        text-decoration: none;
+                    }
+
+                    .visuel1 {
+                        position: relative;
+                        text-align: center;
+                        color: white;
+                    }
+
+                    .centered {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 40px;
+                    }
+
+               
+
+            .services {
+                background-color:rgb(255, 255, 255);
+                width: 100%;
+                height: 340px;
+                margin-top: 20px;
+                padding-top: 20px;
+            }    
+
+                    .servicestitre {
+                        font: Arial, sans-serif;
+                        color: grey;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+
+                    .servicestexte {
+                        font: Arial, sans-serif;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+
+                    .service1 {
+                        background-color: white;
+                        width: 25%;
+                        height: 91px;
+                        float: left;
+                        margin-left: 90px;
+                        margin-top: 50px;
+                    }
+
+                            .servicessoustitre1 {
+                                font: Arial, sans-serif;
+                                color: grey;
+                                text-decoration: none;
+                                text-align: center
+                            }
+
+                            .servicessoustexte1 {
+                                font: Arial, sans-serif;
+                                text-decoration: none;
+                                text-align: center;
+                                font-size: 12px;
+                            }
+
+
+                    .service2 {
+                        background-color: white;
+                        width: 25%;
+                        height: 91px;
+                        float: left;
+                        margin-left: 20px;
+                        margin-top: 50px;
+                    }
+
+                            .servicessoustitre2 {
+                                font: Arial, sans-serif;
+                                color: grey;
+                                text-decoration: none;
+                                text-align: center;
+                            }
+
+                            .servicessoustexte2 {
+                                font: Arial, sans-serif;
+                                text-decoration: none;
+                                text-align: center;
+                                font-size: 12px;
+                            }
+
+                    .service3 {
+                        background-color: white;
+                        width: 25%;
+                        height: 91px;
+                        float: left;
+                        margin-left: 20px; 
+                        margin-top: 50px;                  
+                    }
+
+                            .servicessoustitre3 {
+                                font: Arial, sans-serif;
+                                color: grey;
+                                text-decoration: none;
+                                text-align: center
+                            }
+
+                            .servicessoustexte3 {
+                                font: Arial, sans-serif;
+                                text-decoration: none;
+                                text-align: center;
+                                font-size: 12px;
+                            }
+
+            .visuelsrang1 {
+                    background-color: lightgrey;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                    
+            }
+
+                    .visuelsrang1 img{
+                        width: 100%;
+                        height: 100%;
+                        min-width: 0;
+                        min-height: 0%;
+                        margin-right: 2px;
+                    }
+
+            .news {
+                background-color:rgb(255, 255, 255);
+                width: 100%;
+                height: 400px;
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+                    .newstitre {
+                        font: Arial, sans-serif;
+                        color: grey;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+
+                    .newstexte {
+                        font: Arial, sans-serif;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+
+                            .news1 {
+                                background-color: white;
+                                width: 40%;
+                                height: 120px;
+                                float: left;
+                                margin-left: 80px;
+                                margin-top: 10px;
+                            }
+
+                            .newssoustitre1 {
+                                font: Arial, sans-serif;
+                                color: grey;
+                                text-decoration: none;
+                                text-align: center
+                            }
+
+                            .newssoustexte1 {
+                                font: Arial, sans-serif;
+                                text-decoration: none;
+                                text-align: justify;
+                                font-size: 12px;
+                            }
+
+                            .news2 {
+                                background-color: white;
+                                width: 40%;
+                                height: 120px;
+                                float: left;
+                                margin-left: 50px;
+                                margin-top: 10px;
+                            }
+
+                            .newssoustitre2 {
+                                font: Arial, sans-serif;
+                                color: grey;
+                                text-decoration: none;
+                                text-align: center
+                            }
+
+                            .newssoustexte2 {
+                                font: Arial, sans-serif;
+                                text-decoration: none;
+                                text-align: justify;
+                                font-size: 12px;
+                            }
+
+            .visuelsrang2 {
+                background-color: lightgrey;
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+            }
+            
+                    .visuelsrang2 img{
+                        width: 100%;
+                        height: 100%;
+                        min-width: 0;
+                        min-height: 0;
+                        margin-right: 2px;
+                    }
+
+            .skills {
+                background-color:rgb(255, 255, 255);
+                width: 100%;
+                height: 380px;
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+
+                    .skillstitre {
+                        font: Arial, sans-serif;
+                        color: grey;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+
+                    .skillstexte {
+                        font: Arial, sans-serif;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+
+                        .skills1 {
+                            background-color: white;
+                            width: 40%;
+                            height: 120px;
+                            float: left;
+                            margin-left: 80px;
+                            margin-top: 30px;
+                        }
+
+                        .skills2 {
+                            background-color: white;
+                            width: 40%;
+                            height: 120px;
+                            float: left;
+                            margin-left: 50px;
+                            margin-top: 30px;
+                        }
+
+            .visuelsrang3 {
+                    background-color: lightgrey;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                            
+            }
+        
+                    .visuelsrang3 img{
+                            width: 100%;
+                            height: 100%;
+                            min-width: 0;
+                            min-height: 0%;
+                            margin-right: 2px;   
+                    }      
+
+            .pinterest {
+                background-color:rgb(255, 255, 255);
+                width: 100%;
+                height: 180px;
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+
+                    .quote {
+                        font: Arial, sans-serif;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 12px;
+                        margin: 100px;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+
+                    .signature {
+                        font: Arial, sans-serif;
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 18px;
+                        padding-top: 20px;
+                    }
+
+                    .chanel {
+                        color: rgb(161, 159, 159);
+                    }
+
+        .contact {
+            background-color:rgb(255, 255, 255);
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+                .contacttitre {
+                    font: Arial, sans-serif;
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    text-align: center;
+                }
+
+                        .formulaire {
+                            background-color: white;
+                            width: 30%;
+                            height: 280px;
+                            float: left;
+                            margin-left: 100px;
+                            margin-top: 10px;
+                            font: Arial, sans-serif;
+                            color: rgb(0, 0, 0);
+                            text-decoration: none;
+                            text-align: left;
+                        }
+
+                        .formulaire [type=text], select {
+                            width: 100%;
+                            padding: 0px 0px;
+                            margin: 8px 0;
+                            color: rgb(0, 0, 0);
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            border-radius: 0px;
+                            box-sizing: border-box;
+                        }
+
+                        .contactinformation {
+                            background-color: white;
+                            width: 30%;
+                            height: 280px;
+                            float: left;
+                            margin-left: 200px;
+                            margin-top: 10px;
+                            
+                        }
+                        .textecontact {
+                            font: Arial, sans-serif;
+                            color: rgb(0, 0, 0);
+                            text-decoration: none;
+                            text-align: left;
+                        }
+
+            .outro {
+                list-style-type: none;
+                margin: 0;
+                padding: 20px;
+                overflow: hidden;
+                background-color: lightgrey;
+                font: 13px Helvetica, sans-serif;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+                
+                }
+
+            .outro ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                margin: 0px;
+                
+            }
+                        .outro li {
+                            float: right;
+                            margin-right: 20px;
+                        }
+
+                        .outro li a {
+                           
+                            color: rgb(0, 0, 0);
+                            padding: 0px;
+                            text-decoration: none;
+                            margin-bottom: 30px;
+                        }
+
+                        .rights {
+                            margin: 0px;
+                        }
+                        
+
+                        
+                

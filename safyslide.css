@@ -1,0 +1,676 @@
+body {
+    background-color: cyan;
+    margin: 0px;
+  }
+  
+      .Headband {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+      }
+  
+      .Intro {
+        background-color: mediumpurple;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: space-between;
+      }
+  
+                  .Intro__logo {
+                    width: auto;
+                    height: 60px;
+                    margin-right: 120px;
+                  }
+  
+                  .Intro__navbar {
+                    list-style-type: none;
+                    margin: 0px;
+                    padding: 0px;
+                    display: flex;
+                    flex-direction: row;
+                  }
+  
+                  .Intro__navbar li {
+                    padding-left: 20px;
+                    padding-top: 20px;
+                  }
+  
+                  .Intro__navbar li a {
+                    padding: 0px;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 12px; 
+                    font-weight: bold;
+                  }
+  
+                  .Intro__dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    text-decoration: none;
+                  }
+  
+                  li.Intro__dropdown {
+                    display: inline-block;
+                  }
+  
+                  .Intro__dropdown-content {
+                    display: none;
+                    background-color: #afaaaa;
+                    z-index: 1;
+                    position: absolute;
+                   
+                  }
+  
+                  .Intro__dropdown-content a {
+                    color: black;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+  
+                  }
+  
+                  .Intro__dropdown-content a:hover {
+                  background-color: white;
+                  color: red;
+                  }
+  
+                  .Intro__dropdown:hover .Intro__dropdown-content {
+                    display: block;
+                  }
+  
+      .slide-container {
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        width: 70%;
+        height: 0;
+        padding-bottom: 36%;
+      }
+
+          .slide_img {
+            position: absolute;
+            width: 100%;
+          }
+
+            .slide_img img {
+              width: 100%;
+              height: 100%;
+            }
+
+          #i1, #i2, #i3, #i4, #i5 {
+            display: none;
+          }
+
+          .pre, .nxt{
+            width: 12%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 99;
+            cursor: pointer;
+          }
+
+            .pre {
+              left: 0;
+            }
+
+            .nxt {
+              right: 0;
+            }
+
+          .slide_nav {
+            width: 100%;
+            height: 11px;
+            bottom: 12%;
+            position: absolute;
+            text-align: center;
+            z-index: 99;
+          }
+
+          .dots {
+            top: -1%;
+            width: 18px;
+            height: 18px;
+            margin: 0 4px;
+            position: relative;
+            border-radius: 50%;
+            display: inline-block;
+            background: rgba(0,0,0,.6)
+          }
+
+          .slide_img {
+            z-index: -1;
+          }
+
+              #i1:checked ~ #one,
+              #i2:checked ~ #two,
+              #i3:checked ~ #three,
+              #i4:checked ~ #four,
+              #i5:checked ~ #five {
+                z-index: 9;
+              }
+
+              #i1:checked ~ .nav #dot1,
+              #i2:checked ~ .nav #dot2,
+              #i3:checked ~ .nav #dot3,
+              #i4:checked ~ .nav #dot4,
+              #i5:checked ~ .nav #dot5 {
+                background: #fff;
+              }
+
+              .Slideshow__text {
+                color: #f2f2f2;
+                font-size: 1.5vw;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: left;
+              }
+  
+    .Central {
+        background-color: white;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
+        padding-bottom: 3%;
+    }
+  
+        .Central__colorcases {
+          display: flex;
+        }
+  
+            .Central__colorcases__purplecase{
+              margin-left: 2%;
+            }
+  
+                .Central__colorcases__purplecase__firecase {
+                  background-color: mediumpurple;
+                  font-size: 8px;
+                  color: white;
+                  display: flex;
+                  height: 100px;
+                  padding: 5%;
+                }
+  
+                    .Central__colorcases__purplecase__firecase h2 {
+                      margin: 0px;
+                    }
+  
+                    .Central__colorcases__purplecase__firetext {
+                      font-size: 12px;
+                    }
+  
+                        .Central__colorcases__purplecase__firetext a {
+                          color: red;
+                          text-decoration: none;
+                        }
+  
+                .Central__colorcases__purplecase__tentcase {
+                  background-color: mediumpurple;
+                  font-size: 8px;
+                  color: white;
+                  display: flex;
+                  height: 100px;
+                  padding: 5%;
+                }
+  
+                    .Central__colorcases__purplecase__tentcase h2 {
+                      margin: 0px;
+                    }
+  
+                    .Central__colorcases__purplecase__tenttext {
+                      font-size: 12px;
+                    }
+  
+                        .Central__colorcases__purplecase__tenttext a {
+                          color: red;
+                          text-decoration: none;
+                        }
+  
+                .Central__colorcases__purplecase__bearcase {
+                  background-color: mediumpurple;
+                  font-size: 8px;
+                  color: white;
+                  display: flex;
+                  height: 100px;
+                  padding: 5%;
+                }
+  
+                    .Central__colorcases__purplecase__bearcase h2 {
+                      margin: 0px;
+                    }
+  
+                    .Central__colorcases__purplecase__beartext {
+                      font-size: 12px;
+                    }
+  
+                        .Central__colorcases__purplecase__beartext a {
+                          color: red;
+                          text-decoration: none;
+                        }
+  
+        .Central__destination h2 {
+          font-size: 16px;
+          padding-bottom: 1%;
+          border-bottom: 1px solid lightgrey;
+        }
+  
+        .Central__destination__flagcase {
+            display: flex;
+            width: 100%;
+            
+        }
+  
+                .Central__destination__flagcase__country2 img{
+                  height: auto;
+                  width: 100%;
+                 
+                  border: 1px solid lightgrey;
+                  padding: 5px;
+                }
+
+                .Central__destination__flagcase__country2 {
+                  margin-left: 2%;
+                }
+
+                .Central__destination__flagcase__country3 {
+                  margin-left: 2%;
+                }
+
+                .Central__destination__flagcase__country3 img{
+                  height: auto;
+                  width: 100%;
+                  
+                  border: 1px solid lightgrey;
+                  padding: 5px;
+                }
+  
+                .Central__destination__flagcase__country p {
+                  font-weight: bold;
+                  margin-left: 20px;
+                }
+  
+                .Central__destination__flagcase__country1 img{
+                  height: auto;
+                  width: 100%;
+                  border: 1px solid lightgrey;
+                  padding: 5px;
+                }
+  
+                .Central__destination__flagcase__country1 p {
+                  font-weight: bold;
+                  margin-left: 20px;
+                }
+
+  
+    .Us {
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 2%;
+      padding-bottom: 1%;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+  
+            .Us__aboutus {
+              font-size: 12px;
+              width: 45%;
+            }
+  
+            .Us__aboutus h2 {
+              padding-bottom: 10px;
+              border-bottom: 1px solid lightgrey;
+            }
+  
+            .Us__whyus {
+              font-size: 12px;
+              width: 45%;
+            }
+  
+            .Us__whyus h2 {
+              padding-bottom: 10px;
+              border-bottom: 1px solid lightgrey;
+            }
+  
+            .Us__whyus__compass {
+              font-size: 12px;
+              display: flex;
+              margin-bottom: 20px;
+            }
+  
+                .Us__whyus__compass p {
+                  margin: 0px;
+                }
+  
+                .Us__whyus__compass img {
+                  max-height: 65px;
+                }
+  
+            .Us__whyus__map {
+              font-size: 12px;
+              display: flex;
+              margin-bottom: 20px;
+            }
+  
+                .Us__whyus__map p {
+                  margin: 0px;
+                }
+  
+                .Us__whyus__map img {
+                  max-height: 65px;
+                }
+  
+            .Us__whyus__bike {
+              font-size: 12px;
+              display: flex;
+            } 
+  
+                .Us__whyus__bike p {
+                  margin: 0px;
+                }
+  
+                .Us__whyus__bike img {
+                  max-height: 65px;
+                }
+           
+    .Travel {
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 1%;
+      padding-bottom: 3%;
+    }        
+  
+            .Travel h2 {
+              font-size: 18px;
+              padding-bottom: 1%;
+              border-bottom: 1px solid lightgrey;
+            }
+  
+            .Travel__text {
+              font-size: 12px;
+            }
+                      
+            .Travel__subscribe {
+              background-color: rgb(81, 153, 81);
+              padding: 10px;
+              padding-left: 10px;
+              color: white;
+              border-radius: 5px;
+            }
+  
+   .Footer {
+      background-color: mediumpurple;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-bottom: 1%;
+      display: flex;
+      flex-direction: column;
+   }
+  
+            .Footer__navbar {
+              list-style-type: none;
+              margin: 0px;
+              padding: 0px;
+              float: left;
+            }
+  
+            .Footer__navbar li {
+              float: left;
+              padding-right: 2%;
+              padding-top: 2%;
+            }
+  
+            .Footer__navbar li a {
+              padding: 0px;
+              text-decoration: none;
+              color: black;
+              font-size: 12px; 
+              font-weight: bold;
+            }
+  
+            .Footer__sentence {
+              font-size: 12px;
+              color: lightgrey;
+            }
+  
+  /*modifications for moke up 2 */
+  
+  @media screen and (max-width: 847px)
+  {
+  
+    .Headband {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .Intro {
+      flex-wrap: wrap;
+      }
+            .Intro__logo {
+              margin-right: 285px;
+            }
+            .Intro__navbar {
+              padding-bottom: 10px;
+            }
+  
+    .Intro {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .Slideshow {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .Central {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .Us {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .Travel {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .Footer {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+  }
+  
+  /*modifications for moke up 3 */
+  
+  @media screen and (max-width: 614px)
+  {
+  
+    .Headband {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  
+    .Intro {
+      padding-left: 15%;
+      padding-right: 15%;
+      justify-content: center;
+    }
+  
+            .Intro__logo {
+              margin-left: 30%;
+              margin-right: 30%;
+              width: 50%;
+              height: 10%;
+            }
+  
+            .Intro__navbar li {
+              border-top: 1px solid lightgrey;
+            }
+  
+            .Intro__navbar {
+              list-style-type: none;
+              margin: 0px;
+              padding: 0px;
+              width: 100%;
+              flex-direction: column;
+              padding-bottom: 5%;
+            }
+            
+            .Intro__navbar li, a {
+              padding: 8px 16px;
+              text-decoration: none;
+              padding-bottom: 5px;
+            }
+              
+            .Intro__dropbtn {
+              display: flex;
+              justify-content: space-between;
+            }
+  
+            .Intro__navbar .Intro__dropdown-content {
+              position: static;
+            }
+  
+            .Intro__navbar .dropdown-content a {
+              display: block;
+              text-align: left;
+              width: 100%;
+              padding: 10px;
+            } 
+    
+  
+    .Slideshow {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  
+    .Central {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+   
+            .Central__colorcases {
+              flex-direction: column;
+            }
+  
+            .Central__destination__flagcase {
+              flex-direction: column;
+            }
+  
+            .Central__destination__flagcase__country2 {
+              display: none;
+            }
+
+            .Central__destination__flagcase__country3 {
+              display: none;
+            }
+  
+    .Us {
+      padding-left: 15%;
+      padding-right: 15%;
+      flex-direction: column;
+    }
+              .Us__aboutus {
+                width: 100%;
+              }
+  
+              .Us__whyus {
+                width: 100%;
+              }
+            
+  
+    .Travel {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    .Footer {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+    
+  }
+  
+  
+  /*modifications for moke up 4 */
+  
+  @media screen and (max-width: 305px)
+  {
+    .Headband {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .Intro {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    .Slideshow {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    .Central {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+            
+            .Central__colorcases__purplecase{
+            margin-left: 0%;
+            }
+  
+  .Us {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .Travel {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .Footer {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  
+            .Footer__navbar li {
+              padding-right: 40px;
+            }
+  
+            .Footer__navbar {
+              padding: 10px;
+            }
+  
+            .Footer__sentence {
+              padding-bottom: 20px;
+            }
+  }
+          
+  
+  
+          
+          
+  
+          
+  
+          
+  
+          
+            
+          
+  
+          
+  
+          
+  
+  
+  
+  

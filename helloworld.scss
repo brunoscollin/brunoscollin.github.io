@@ -1,0 +1,301 @@
+$margin-right: 5%;
+$margin-left: 5%;
+$iconsize: 20%;
+$margintopneg: -5px;
+$paddingpara1: 20%;
+$paddingpara2: 10%;
+$paddingpara3: 0;
+
+//variables div Menu
+$titlemenu: 2vw;
+$textsize: 1.5vw;
+
+// variables div proposition
+$title1: 5vw;
+$title2: 4vw;
+$proptext: 2.5vw;
+
+// variables div Newsletter
+$newslettersize: 3vw;
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+    .Header__mountains {
+        position: relative;
+        margin-bottom: 0;
+        img {
+            width: 100%;
+        }
+        width: 100%;
+    }
+
+    .Header__logo {
+        width:55%;
+        position: absolute;
+        top: 6%;
+        left: 20%;
+        img {
+            width: 100%;
+            height: auto; 
+        }
+    }
+
+    .Menu 
+    {
+        background-color:  rgb(201, 229, 243);
+        display: flex;
+        padding-right: 6%;
+        padding-left: 6%;
+        padding-top: 4%;
+        margin-top: $margintopneg;
+        padding-bottom: 4%;
+    }
+
+        .Menu__navigate {
+            text-align: center;
+            img{
+            height: auto;
+            width: 35%;
+            }
+            h1 {
+                font-size: $titlemenu;
+            }
+            p {
+                text-align: justify;
+                font-size: $textsize;
+                padding-left: $paddingpara1;
+                padding-right: $paddingpara1;
+            }
+        }
+
+        .Menu__connect {
+            @extend.Menu__navigate;
+            padding-left: 0;
+            h2 {
+                font-size: $titlemenu;
+            }
+        }
+
+        .Menu__analyze {
+            @extend.Menu__connect;
+        }
+
+    .Proposition {
+        display: flex;
+    }
+
+        .Proposition__prop1 {
+            
+            h2 {
+                font-size: $title1;
+                margin: auto;
+                text-align: right;
+                margin-right: 2%;
+            }
+            h3 {
+                font-size: $title2;
+                margin: auto;
+                text-align: right;
+                margin-right: 2%;
+                margin-top: -12%;
+            }
+            p {
+                font-size: $proptext;
+                padding-left: $paddingpara1;
+                padding-right: $paddingpara1;
+                text-align: justify;
+            }
+            background-color: rgb(215, 238, 252);
+        }
+
+        .Proposition__prop2 {
+            @extend.Proposition__prop1;
+            background-color: rgb(186, 225, 248);
+        }
+
+        .Proposition__prop3 {
+            @extend.Proposition__prop1;
+            background-color: rgb(155, 210, 241);
+        }
+
+        .Proposition__prop4 {
+            @extend.Proposition__prop1;
+            background-color: rgb(119, 184, 222);
+        }
+
+    .Mountainslide {
+        position: relative;
+
+                .Mountainslide__leftarrow img{
+                    position: absolute;
+                    width: 7%;
+                    height: auto;
+                    top: 40%;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .Mountainslide__rightarrow{
+                    @extend.Mountainslide__leftarrow;
+                    display: flex;
+                    flex-direction: row-reverse;
+                }
+    }
+
+    .Newsletter {
+        background-color: rgb(155, 210, 241);
+        display: flex;
+        flex-direction: column;
+        margin-top: $margintopneg;
+    }
+
+        .Newsletter__catch h3 {
+            text-align: center;
+            color: white;
+            font-size: $newslettersize;
+            display: flex;
+            flex-direction: column;
+            margin: 2%;
+        }
+
+        .Newsletter__form {
+            text-align: center;
+            padding-bottom: 2%;
+        }
+
+            .Newsletter__input {
+                padding: 0.5%;
+                border-radius: 5px;
+                width: 40%;
+                font-size: 2vw;
+                margin-right: 5%;
+                border: none;
+            }
+
+            .Newsletter__submit {
+                @extend.Newsletter__input;
+                width: 10%;
+                background-color: rgb(102, 130, 164);
+                color: white;
+            }
+
+    footer {
+        background-color: rgb(119, 184, 222);
+        margin-top: $margintopneg;
+        padding-bottom: 0.1%;
+        padding-top: 0.5%;
+        
+        p{
+            font-size: 2vw;
+            color: white;
+            text-align: center;
+        }
+    }
+//responsive
+$textsizeresp: 12px;
+
+/*modifications for moke up 2 */
+@media screen and (max-width: 651px)
+{
+    .Menu {
+        flex-direction: column;
+        h1 {
+            font-size: 16px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+    }
+
+    .Menu__navigate {
+        img{
+        width: 20%;
+        }
+        p {
+            font-size: $textsizeresp;
+        }
+    }
+}
+/*modifications for moke up 3 */
+@media screen and (max-width: 519px)
+{
+    .Menu p {
+        padding-right: $paddingpara2;
+        padding-left: $paddingpara2;
+    }
+    .Proposition {
+        flex-direction: column;
+    }
+    .Proposition__prop1 {
+        h2 {
+            text-align: center;
+            font-size: 20px;
+        }
+        h3 {
+            text-align: center;
+            margin-top: -5%;
+            font-size: 18px;
+        }
+        p {
+            font-size: $textsizeresp;
+            padding-right: $paddingpara2;
+            padding-left: $paddingpara2;
+        }
+    }
+    .Newsletter__catch h3 {
+        font-size: 14px;
+    }
+    .Newsletter__input {
+        font-size: 10px;
+        width: 50%;
+    }
+    .Newsletter__submit {
+        width: 20%;
+    }
+    footer p {
+        font-size: $textsizeresp;
+    }
+}
+/*modifications for moke up 4 */
+@media screen and (max-width: 290px)
+{
+    .Menu {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Menu p {
+        padding-right: $paddingpara3;
+        padding-left: $paddingpara3;
+    } 
+    
+    .Proposition__prop1 {
+        p {
+            padding-right: $paddingpara3;
+            padding-left: $paddingpara3;
+        }
+    }
+    .Header__logo {
+        top: 2%;
+    }
+}
+
+
+
+
+
+
+            
+        
+
+        
+           
+    
