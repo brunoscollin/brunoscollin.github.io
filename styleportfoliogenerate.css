@@ -161,8 +161,12 @@ body {
 
 .Portfolio__title {
   text-align: center;
-  padding-top: 3%;
+  margin-top: 0;
+  margin-bottom: 0;
   color: white; }
+
+.Portfoliocards1 {
+  padding-top: 2%; }
 
 .Contact {
   background-color: #242934;

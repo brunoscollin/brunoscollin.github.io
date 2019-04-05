@@ -189,13 +189,17 @@ body {
 .Portfolio {
  background-color: #04525c;
  display: grid;
-
 }
 
     .Portfolio__title {
         text-align: center;
-        padding-top: 3%;
+        margin-top: 0;
+        margin-bottom: 0;
         color: white;
+    }
+
+    .Portfoliocards1 {
+        padding-top: 2%;
     }
 
 .Contact {
@@ -212,7 +216,6 @@ body {
         padding-top: 3%; 
         padding-bottom: 3%;
     }
- 
     
             input[type=text], select, textarea {
                 width: 100%;
