@@ -177,9 +177,10 @@ body {
 
 .Contact__title {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
   color: white;
-  padding-top: 3%;
-  padding-bottom: 3%; }
+  padding-bottom: 2%; }
 
 input[type=text], select, textarea {
   width: 100%;
@@ -240,10 +241,10 @@ input[type=submit]:hover {
   padding: 5%;
   padding-left: 15%;
   padding-right: 15%;
-  background-image: url("insta7.png");
+  background-image: url("outro.jpg");
   background-size: cover;
-  margin-top: 5%;
-  margin-bottom: 5%; }
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
 @media screen and (max-width: 400px) {
   .About__central {
