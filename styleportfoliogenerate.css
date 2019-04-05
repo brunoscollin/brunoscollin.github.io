@@ -96,13 +96,16 @@ body {
   width: 30%;
   height: auto;
   margin-left: 35%;
-  margin-top: 7%; }
+  margin-top: 2%; }
+
+.btn-small {
+  margin-left: 17%; }
 
 .Skills__prog {
   display: flex;
   flex-direction: row;
   margin-top: 5%;
-  margin-left: 20%; }
+  margin-left: 17%; }
 
 .Skills__prog__logo {
   width: 80%;
