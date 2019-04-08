@@ -1,41 +1,24 @@
+//variables
+$aboutpadding: 5%;
+$titlecolor: white;
+//mixins
+
+
 body {
     width: 100%;
 }
 
+    .nav-wrapper {
+        border-bottom: 3px solid #16a5c9;
+    }
 
-.Introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 17%;
-}
-
-        .Introduction__titre {
-            font-size: 2.5vw;
-            text-align: center;
-        }
-
-        .Introduction__name {
-            color:#ffffff;
-        }
-
-
-.nav-wrapper {
-    border-bottom: 3px solid #16a5c9;
-}
-
-.About {
-    padding-bottom: 5%;
-	color: #fff;
-	background: linear-gradient(-45deg, #0b1c29, #063844, #16a5c9, #04525c);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-
+    .About {
+        padding-bottom: 5%;
+	    background: linear-gradient(-45deg, #0b1c29, #063844, #16a5c9, #04525c);
+	    background-size: 400% 400%;
+	    -webkit-animation: Gradient 15s ease infinite;
+	    -moz-animation: Gradient 15s ease infinite;
+	    animation: Gradient 15s ease infinite;
 
         @-webkit-keyframes Gradient {
             0% {
@@ -72,38 +55,37 @@ body {
                 background-position: 0% 50%
             }
         }
-}
-
-    .About__central {
-        display: flex;
-        flex-direction: row;
-        padding-top: 2%;
     }
 
-            .About__title {
-                text-align: center;
-                margin-top: 0;
-                margin-bottom: 0;
-                padding-top: 5%;
-                
-            }
+        .About__title {
+            text-align: center;
+            color: $titlecolor;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        .About__central {
+            display: flex;
+            flex-direction: row;
+        }
 
             .card-content {
                 color: black;
             }
 
-            .About__resume {
-               display: flex;
-                width: 50%;
-                flex-direction: column;
-                padding-left: 5%;
-                align-content: center;
-            }
+                .About__resume {
+                    display: flex;
+                    width: 50%;
+                    flex-direction: column;
+                    padding-left: $aboutpadding;
+                    align-content: center;
+                }
 
-            .collapsible-header {
-                color: black;
-            }
-
+                .collapsible-header {
+                    color: black;
+                }
                         .row {
                             flex-direction: column;
                         }
@@ -118,7 +100,8 @@ body {
                         }
 
             .About__skills {
-                width: 45%;
+                width: 50%;
+                padding-right: $aboutpadding;
             }
 
                 .Skills__coding {
@@ -142,7 +125,6 @@ body {
                         flex-direction: row;
                         margin-top: 5%;
                         margin-left: 17%;
-                        
                     }
 
                     .Skills__prog__logo {
@@ -150,81 +132,26 @@ body {
                         height: 80%;
                     }
 
-                            .Skills__prog__chip {
-                                width: 50%;
-                            }
-
-                            .Skills__prog__container {
-                                width: 50%;
-                            }
-                            
-                                    .skillssass {width: 45%; background-color: rgb(207, 100, 154);}
-                                    .skillsmaterialize {width: 80%; background-color: rgb(235, 112, 119);}
-                                    .skillscss {width: 75%; background-color: rgb(55, 154, 214);}
-                                    .skillshtml {width: 90%; background-color: rgb(221, 74, 37);}
-                                    .skillsjavascript {width: 50%; background-color: rgb(233, 212, 78);}
-
-                            .skills {
-                                text-align: right;
-                                padding: 2%;
-                                color: white;
-                            }
-
-                .material-icons {
-                    padding-top: 3%;
-                }
-
-                    .languageflags {
-                        display: flex;
-                        
-                    }
-
-                        .flag {
-                            width: 20%;
-                            height: 20%;
-                        }
-
-                        .uk {
-                            padding-left: 2%;
-                        }
-
-                        .fr {
-                            padding-right: 2%
-                        }
-
-.Portfolio {
- background-color: #04525c;
- display: grid;
-}
-
-    .Portfolio__title {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: white;
-        padding-top: 5%;
+    .Portfolio {
+        background-color: #04525c;
+        display: grid;
     }
 
-    .Portfoliocards1 {
-        padding-top: 2%;
+            .Portfolio__title {
+                @extend.About__title;
+            }
+
+    .Contact {
+        background-color: rgb(36, 41, 52);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-.Contact {
-    background-color: rgb(36, 41, 52);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-    .Contact__title {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-        color: white;
-        padding-bottom: 2%;
-        padding-top: 5%;
-    }
+            .Contact__title {
+                @extend.About__title;
+            }
     
             input[type=text], select, textarea {
                 width: 100%;
@@ -233,11 +160,6 @@ body {
                 border-radius: 4px;
                 resize: vertical;
                 color: white;
-            }
-            
-            label {
-                padding: 12px 12px 12px 0;
-                display: inline-block;
             }
             
             input[type=submit] {
@@ -260,49 +182,44 @@ body {
                 padding: 20px;
                 box-sizing: border-box;
                 margin-bottom: 3%;
-                
             }
             
-            .col-25 {
-                float: left;
-                width: 25%;
-                margin-top: 6px;
-            }
-            
-            .col-75 {
-                float: left;
-                width: 75%;
-                margin-top: 6px;
-            }
-            
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            
-            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 600px) {
-                .col-25, .col-75, input[type=submit] {
-                    width: 100%;
-                    margin-top: 0;
+                .col-25 {
+                    float: left;
+                    width: 25%;
+                    margin-top: 6px;
                 }
-            }
+                
+                .col-75 {
+                    float: left;
+                    width: 75%;
+                    margin-top: 6px;
+                }
+            
+                /* Clear floats after the columns */
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+            
+                /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 600px) {
+                    .col-25, .col-75, input[type=submit] {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                }
 
-    .backtothetop {
-        padding-top: 5%;
-    }
-
-    .socialnetworks {
-        padding: 3%;
-        padding-left: 15%;
-        padding-right: 15%;
-        background-image: url("outro.jpg");
-        background-size: cover;
-        margin-top: 1%;
-        margin-bottom: 1%;
-    } 
+            .socialnetworks {
+                padding: 3%;
+                padding-left: 15%;
+                padding-right: 15%;
+                background-image: url("outro.jpg");
+                background-size: cover;
+                margin-top: 1%;
+                margin-bottom: 1%;
+            } 
     
     @media screen and (max-width: 400px)
 {
@@ -318,8 +235,7 @@ body {
     .About__skills {
         width: 100%;
     }
-    
-    }
+}
     
     
 
