@@ -61,7 +61,8 @@ body {
   flex-direction: column; }
 
 .waves-effect {
-  width: 65%; }
+  width: 63%;
+  margin-left: 2%; }
 
 .modal {
   width: 50% !important;
@@ -176,7 +177,8 @@ input[type=submit]:hover {
     padding-left: 1%; }
 
   .waves-effect {
-    width: 100%; }
+    width: 100%;
+    margin-left: 0; }
 
   .About__skills {
     width: 100%;
