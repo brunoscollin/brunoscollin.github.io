@@ -1,9 +1,11 @@
 body {
   width: 100%; }
 
-header {
-  height: 900px;
-  color: #fff;
+.nav-wrapper {
+  border-bottom: 3px solid #16a5c9; }
+
+.About {
+  padding-bottom: 5%;
   background: linear-gradient(-45deg, #0b1c29, #063844, #16a5c9, #04525c);
   background-size: 400% 400%;
   -webkit-animation: Gradient 15s ease infinite;
@@ -30,32 +32,20 @@ header {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-.Introduction {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 17%; }
-
-.Introduction__titre {
-  font-size: 2.5vw;
-  text-align: center; }
-
-.Introduction__name {
-  color: #ffffff; }
-
-.nav-wrapper {
-  border-bottom: 3px solid #16a5c9; }
+.About__title, .Portfolio__title, .Contact__title {
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 3%;
+  padding-bottom: 3%; }
 
 .About__central {
   display: flex;
-  flex-direction: row;
-  padding-top: 5%; }
+  flex-direction: row; }
 
-.About__title {
-  text-align: center; }
+.card-content {
+  color: black; }
 
 .About__resume {
   display: flex;
@@ -63,6 +53,9 @@ header {
   flex-direction: column;
   padding-left: 5%;
   align-content: center; }
+
+.collapsible-header {
+  color: black; }
 
 .row {
   flex-direction: column; }
@@ -78,7 +71,8 @@ header {
   width: 100%; }
 
 .About__skills {
-  width: 45%; }
+  width: 50%;
+  padding-right: 5%; }
 
 .Skills__coding {
   display: flex;
@@ -86,65 +80,26 @@ header {
 
 .Skills__coding__logo {
   width: 30%;
-  height: auto; }
+  height: auto;
+  margin-left: 35%;
+  margin-top: 0,5%; }
+
+.btn-small {
+  margin-left: 17%; }
 
 .Skills__prog {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 17%; }
 
-.Skills__prog__chip {
-  width: 50%; }
-
-.Skills__prog__container {
-  width: 50%; }
-
-.skillssass {
-  width: 45%;
-  background-color: #cf649a; }
-
-.skillsmaterialize {
+.Skills__prog__logo {
   width: 80%;
-  background-color: #eb7077; }
-
-.skillscss {
-  width: 75%;
-  background-color: #379ad6; }
-
-.skillshtml {
-  width: 90%;
-  background-color: #dd4a25; }
-
-.skillsjavascript {
-  width: 20%;
-  background-color: #e9d44e; }
-
-.skills {
-  text-align: right;
-  padding: 2%;
-  color: white; }
-
-.material-icons {
-  padding-top: 3%; }
-
-.languageflags {
-  display: flex; }
-
-.flag {
-  width: 20%;
-  height: 20%; }
-
-.uk {
-  padding-left: 2%; }
-
-.fr {
-  padding-right: 2%; }
+  height: 80%; }
 
 .Portfolio {
-  background-color: #04525c; }
-
-.Portfolio__title {
-  text-align: center;
-  padding-top: 3%; }
+  background-color: #04525c;
+  display: grid; }
 
 .Contact {
   background-color: #242934;
@@ -153,12 +108,6 @@ header {
   justify-content: center;
   align-items: center; }
 
-.Contact__title {
-  text-align: center;
-  color: white;
-  padding-top: 3%;
-  padding-bottom: 3%; }
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -166,10 +115,6 @@ input[type=text], select, textarea {
   border-radius: 4px;
   resize: vertical;
   color: white; }
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block; }
 
 input[type=submit] {
   background-color: #fdfdfd;
@@ -211,17 +156,14 @@ input[type=submit]:hover {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0; } }
-.backtothetop {
-  padding-top: 5%; }
-
 .socialnetworks {
-  padding: 5%;
+  padding: 3%;
   padding-left: 15%;
   padding-right: 15%;
-  background-image: url("insta7.png");
+  background-image: url("outro.jpg");
   background-size: cover;
-  margin-top: 5%;
-  margin-bottom: 5%; }
+  margin-top: 1%;
+  margin-bottom: 1%; }
 
 @media screen and (max-width: 400px) {
   .About__central {

@@ -1,8 +1,12 @@
 //variables
 $aboutpadding: 5%;
 $titlecolor: white;
-//mixins
 
+//mixins
+@mixin titlepadding ($size) {
+    padding-top: $size;
+    padding-bottom: $size;
+}
 
 body {
     width: 100%;
@@ -62,8 +66,7 @@ body {
             color: $titlecolor;
             margin-top: 0;
             margin-bottom: 0;
-            padding-top: 3%;
-            padding-bottom: 3%;
+            @include titlepadding(4%);
         }
 
         .About__central {
