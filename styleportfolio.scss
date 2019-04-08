@@ -7,6 +7,10 @@ $titlecolor: white;
     padding-top: $size;
     padding-bottom: $size;
 }
+@mixin responsivepadding ($size){
+    padding-left: $size;
+    padding-right: $size;
+}
 
 body {
     width: 100%;
@@ -224,7 +228,7 @@ body {
                 margin-bottom: 1%;
             } 
     
-    @media screen and (max-width: 400px)
+    @media screen and (max-width: 375px)
 {
     .About__central {
         display: flex;
@@ -233,10 +237,21 @@ body {
 
     .About__resume {
         width: 100%;
+        @include responsivepadding(1%);
+    }
+
+    .waves-effect {
+        width: 100%;
     }
 
     .About__skills {
         width: 100%;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+    .btn-small {
+        margin-left: 0;
     }
 }
     

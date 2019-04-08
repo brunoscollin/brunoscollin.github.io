@@ -165,15 +165,25 @@ input[type=submit]:hover {
   margin-top: 1%;
   margin-bottom: 1%; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   .About__central {
     display: flex;
     flex-direction: column; }
 
   .About__resume {
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%; }
+
+  .waves-effect {
     width: 100%; }
 
   .About__skills {
-    width: 100%; } }
+    width: 100%;
+    padding-right: 1%;
+    padding-left: 1%; }
+
+  .btn-small {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=styleportfoliogenerate.css.map */
