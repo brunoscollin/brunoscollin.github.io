@@ -165,15 +165,15 @@ input[type=submit]:hover {
   margin-top: 1%;
   margin-bottom: 1%; }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .About__central {
     display: flex;
     flex-direction: column; }
 
   .About__resume {
     width: 100%;
-    padding-left: 1%;
-    padding-right: 1%; }
+    padding-right: 1%;
+    padding-left: 1%; }
 
   .waves-effect {
     width: 100%; }

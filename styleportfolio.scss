@@ -228,7 +228,7 @@ body {
                 margin-bottom: 1%;
             } 
     
-    @media screen and (max-width: 375px)
+    @media screen and (max-width: 768px)
 {
     .About__central {
         display: flex;
@@ -237,7 +237,8 @@ body {
 
     .About__resume {
         width: 100%;
-        @include responsivepadding(1%);
+        padding-right: 1%;
+        padding-left: 1%;
     }
 
     .waves-effect {
